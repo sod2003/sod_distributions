@@ -79,6 +79,7 @@ class Gaussian(Distribution):
 			
 		Returns:
 			None
+
 		"""
 		plt.hist(self.data)
 		plt.title('Histogram of Data')
@@ -96,6 +97,7 @@ class Gaussian(Distribution):
 		
 		Returns:
 			float: probability density function output
+			
 		"""
 		
 		return (1.0 / (self.stdev * math.sqrt(2*math.pi))) * math.exp(-0.5*((x - self.mean) / self.stdev) ** 2)

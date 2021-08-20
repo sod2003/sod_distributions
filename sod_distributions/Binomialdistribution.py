@@ -11,11 +11,8 @@ class Binomial(Distribution):
         stdev (float) representing the standard deviation of the distribution
         data_list (list of floats) a list of floats to be extracted from the data file
         p (float) representing the probability of an event occurring
-        n (int) number of trials
-    
-    
-    TODO: Fill out all functions below
-            
+        n (int) number of trials      
+
     """
     
     
@@ -92,6 +89,7 @@ class Binomial(Distribution):
             
         Returns:
             None
+            
         """
                 
         plt.bar(x = ['0', '1'], height = [(1 - self.p) * self.n, self.p * self.n])
@@ -110,6 +108,7 @@ class Binomial(Distribution):
         
         Returns:
             float: probability density function output
+
         """
         
         a = math.factorial(self.n) / (math.factorial(k) * (math.factorial(self.n - k)))
